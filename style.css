@@ -1,0 +1,42 @@
+body {
+    margin: 0;
+    min-height: 100vh;
+    background-image: url('https://i.pinimg.com/236x/ff/50/b1/ff50b18bee52ecbae15a653f961c9d74.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    font-family: Arial, sans-serif;
+}
+
+nav {
+    background: rgba(255, 255, 255, 0.8);
+    padding: 1rem;
+}
+
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    gap: 1rem;
+}
+
+nav a {
+    color: #222;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+main {
+    padding: 2rem;
+    color: #fff;
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.8);
+}
+
+body.cookies-page {
+    background-image: url('https://i.pinimg.com/736x/64/7a/16/647a1614f7bb8935f4a5eef7a2e65912.jpg');
+}
+
+body.strawberry-page {
+    background-image: url('https://i.pinimg.com/736x/ac/e0/8b/ace08b569309f123cdfb99fafc80435f.jpg');
+}
