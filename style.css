@@ -1,10 +1,12 @@
 body {
     margin: 0;
     min-height: 100vh;
-    background-image: url('https://i.pinimg.com/236x/ff/50/b1/ff50b18bee52ecbae15a653f961c9d74.jpg');
+    background-image: url('https://i.pinimg.com/originals/ff/50/b1/ff50b18bee52ecbae15a653f961c9d74.jpg');
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
+    background-attachment: fixed;
+    image-rendering: auto;
     font-family: Arial, sans-serif;
 }
 
@@ -34,9 +36,9 @@ main {
 }
 
 body.cookies-page {
-    background-image: url('https://i.pinimg.com/736x/64/7a/16/647a1614f7bb8935f4a5eef7a2e65912.jpg');
+    background-image: url('https://i.pinimg.com/originals/64/7a/16/647a1614f7bb8935f4a5eef7a2e65912.jpg');
 }
 
 body.strawberry-page {
-    background-image: url('https://i.pinimg.com/736x/ac/e0/8b/ace08b569309f123cdfb99fafc80435f.jpg');
+    background-image: url('https://i.pinimg.com/originals/ac/e0/8b/ace08b569309f123cdfb99fafc80435f.jpg');
 }
