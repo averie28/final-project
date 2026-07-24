@@ -30,6 +30,10 @@ nav a {
 
 nav a:hover {
     color: #0a3537;
+    background: rgba(255, 255, 255, 0.45);
+    padding: 0.35rem 0.6rem;
+    border-radius: 999px;
+    transition: all 0.2s ease-in-out;
 }
 
 main {
