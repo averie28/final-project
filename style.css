@@ -1,5 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Fuzzy+Bubbles:wght@400;700&display=swap');
 
+:root {
+    --content-width: 1000px;
+}
+
 body {
     margin: 0;
     font-family: 'Fuzzy Bubbles', cursive, sans-serif;
@@ -54,7 +58,7 @@ h1 {
     display: grid;
     grid-template-columns: repeat(3, minmax(0, 1fr));
     gap: 1rem;
-    max-width: 1000px;
+    max-width: var(--content-width);
     margin: 2rem auto 0;
     padding: 0 1rem;
     align-items: stretch;
@@ -120,17 +124,20 @@ h1 {
 
 /* Map container below the photo grid */
 .map-container {
-    max-width: 1000px;
+    max-width: var(--content-width);
     margin: 1rem auto 2rem;
     padding: 0 1rem;
+    text-align: center;
 }
 
 .map-image {
     width: 100%;
-    height: 260px;
+    height: 200px; /* slightly smaller height to match layout */
+    max-width: 100%;
     object-fit: cover;
     display: block;
     border-radius: 10px;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    margin: 0 auto;
 }
 
