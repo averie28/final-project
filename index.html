@@ -27,6 +27,11 @@
                 <img class="map-image" src="https://cdn.britannica.com/26/183726-050-6D72DC3C/World-Data-Locator-Map-Norway.jpg" alt="Map of Norway">
             </div>
 
+            <div class="lightbox" id="map-lightbox" aria-hidden="true">
+                <span class="lightbox-close" aria-label="Close image">&times;</span>
+                <img src="https://cdn.britannica.com/26/183726-050-6D72DC3C/World-Data-Locator-Map-Norway.jpg" alt="Expanded map of Norway">
+            </div>
+
             <section class="facts-section">
                 <table class="facts-table">
                     <thead>
@@ -50,5 +55,31 @@
                 </table>
             </section>
         </main>
+
+        <script>
+            const mapImage = document.querySelector('.map-image');
+            const lightbox = document.getElementById('map-lightbox');
+            const lightboxImage = lightbox ? lightbox.querySelector('img') : null;
+            const closeButton = document.querySelector('.lightbox-close');
+
+            if (mapImage && lightbox && closeButton && lightboxImage) {
+                const openLightbox = () => {
+                    lightbox.classList.add('show');
+                    lightbox.setAttribute('aria-hidden', 'false');
+                    document.body.style.overflow = 'hidden';
+                };
+
+                const closeLightbox = () => {
+                    lightbox.classList.remove('show');
+                    lightbox.setAttribute('aria-hidden', 'true');
+                    document.body.style.overflow = '';
+                };
+
+                mapImage.addEventListener('click', openLightbox);
+                closeButton.addEventListener('click', closeLightbox);
+                lightbox.addEventListener('click', closeLightbox);
+                lightboxImage.addEventListener('click', (event) => event.stopPropagation());
+            }
+        </script>
     </body>
 </html>

@@ -157,6 +157,38 @@ h1 {
     box-shadow: 0 8px 20px rgba(0, 0, 0, 0.35);
 }
 
+.lightbox {
+    position: fixed;
+    inset: 0;
+    background: rgba(0, 0, 0, 0.85);
+    display: none;
+    align-items: center;
+    justify-content: center;
+    z-index: 1000;
+    padding: 1rem;
+}
+
+.lightbox.show {
+    display: flex;
+}
+
+.lightbox img {
+    max-width: 100%;
+    max-height: 90vh;
+    object-fit: contain;
+    border-radius: 12px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.4);
+}
+
+.lightbox-close {
+    position: absolute;
+    top: 1rem;
+    right: 1.5rem;
+    color: white;
+    font-size: 2rem;
+    cursor: pointer;
+}
+
 .facts-section {
     max-width: var(--content-width);
     margin: 0 auto 2rem;
@@ -181,7 +213,7 @@ h1 {
 }
 
 .facts-table th {
-    background: #37b2b9;
+    background: #9ce8ec;
     color: white;
     font-size: 1.1rem;
 }
