@@ -141,3 +141,19 @@ h1 {
     margin: 0 auto;
 }
 
+/* Hover zoom effect so the map expands to show more detail */
+.map-container {
+    overflow: hidden;
+}
+
+.map-image {
+    transition: transform 0.35s ease, box-shadow 0.25s ease;
+    transform-origin: center center;
+    cursor: pointer;
+}
+
+.map-image:hover {
+    transform: scale(1.12);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.35);
+}
+
